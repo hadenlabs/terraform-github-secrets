@@ -25,8 +25,8 @@ badges:
     image: 'https://github.com/hadenlabs/terraform-github-secretsactions/workflows/lint.yml/badge.svg?branch=develop'
     url: 'https://github.com/hadenlabs/terraform-github-secrets/actions'
   - name: 'Issues'
-    image: "https://img.shields.io/github/issues/hadenlabs/terraform-github-secrets.svg"
-    url: "https://github.com/hadenlabs/terraform-github-secrets/issues"
+    image: 'https://img.shields.io/github/issues/hadenlabs/terraform-github-secrets.svg'
+    url: 'https://github.com/hadenlabs/terraform-github-secrets/issues'
   - name: 'Latest Release'
     image: 'https://img.shields.io/github/release/hadenlabs/terraform-github-secrets.svg'
     url: 'https://github.com/hadenlabs/terraform-github-secrets/releases'
@@ -40,9 +40,17 @@ usage: |-
 
   ```hcl
     module "main" {
-      source = "github.com/hadenlabs/terraform-github-secrets"
+      source = "hadenlabs/secrets/github"
+      version = "0.0.0
 
-      name        = "repository-example"
+      providers = {
+        github = github
+      }
+
+      visibility        = "all"
+      secrets = {
+        GH_TOKEN = "token"
+      }
 
     }
 
