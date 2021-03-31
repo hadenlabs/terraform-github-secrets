@@ -7,7 +7,7 @@ variable "visiblity" {
   type        = string
   description = "The visibility of the secrets."
   validation {
-    condition     = can(!contains(["all", "private", "selected"], visibility))
+    condition     = can(!contains(["all", "private"], var.visibility))
     error_message = "ERROR: visibility not permitted."
   }
 }
