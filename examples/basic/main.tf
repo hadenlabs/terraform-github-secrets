@@ -1,5 +1,5 @@
 module "main" {
-  source = "../"
+  source = "../.."
 
   providers = {
     github = github
