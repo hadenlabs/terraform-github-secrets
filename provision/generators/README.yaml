@@ -56,7 +56,7 @@ usage: |-
 
   ```
 
-  Full working example can be found in [example](./example) folder.
+  Full working examples can be found in [examples](./examples) folder.
 
 examples:
   - 'docs/examples/common.md'
