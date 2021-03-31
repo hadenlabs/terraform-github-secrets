@@ -5,19 +5,25 @@ This document gives an overview of variables used in the platform of the terrafo
 
 | Name | Version |
 |------|---------|
-| terraform | >= 0.13 |
+| terraform | >= 0.14 |
+| github | >=4.5.0 |
 
 ## Providers
 
-No provider.
+| Name | Version |
+|------|---------|
+| github | >=4.5.0 |
 
 ## Inputs
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| tags | This is to help you add tags to your cloud objects | `map(any)` | `null` | no |
+| secrets | secrets for repository | `map(any)` | n/a | yes |
+| visiblity | The visibility of the secrets. | `string` | n/a | yes |
 
 ## Outputs
 
-No output.
+| Name | Description |
+|------|-------------|
+| secrets | output instance github actions secrets organization |
 
