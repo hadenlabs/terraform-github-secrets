@@ -19,7 +19,7 @@ repos:
         args: []
         files: .py$
   - repo: https://github.com/pre-commit/mirrors-pylint
-    rev: v2.7.2
+    rev: v3.0.0a1
     hooks:
       - id: pylint
         exclude: __pycache__|migrations|conf.py|_build|.tox|pootle/static|pootle/translations|pootle/locale|pootle/assets|templates
@@ -94,6 +94,11 @@ repos:
       - id: terraform_fmt
       - id: terraform_tfsec
       - id: checkov
+  - repo: https://github.com/mineiros-io/pre-commit-hooks
+    rev: v0.2.2
+    hooks:
+      - id: phony-targets
+      - id: markdown-link-check
   - repo: git://github.com/dnephin/pre-commit-golang
     rev: v0.3.5
     hooks:
