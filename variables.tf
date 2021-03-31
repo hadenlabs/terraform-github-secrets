@@ -3,11 +3,11 @@ variable "secrets" {
   description = "secrets for repository"
 }
 
-variable "visiblity" {
+variable "visibility" {
   type        = string
   description = "The visibility of the secrets."
   validation {
-    condition     = can(!contains(["all", "private"], var.visibility))
+    condition     = contains(list("all", "private"), var.visibility)
     error_message = "ERROR: visibility not permitted."
   }
 }
