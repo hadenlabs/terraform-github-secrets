@@ -85,6 +85,7 @@ help:
 	@make docs.help
 	@make test.help
 	@make git.help
+	@make go.help
 	@make utils.help
 	@make python.help
 	@make yarn.help

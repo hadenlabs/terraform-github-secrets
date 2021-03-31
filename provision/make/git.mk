@@ -1,7 +1,5 @@
-# git
+## Show commands help git
 .PHONY: git.help
-
-
 git.help:
 	@echo '    git:'
 	@echo ''
@@ -11,25 +9,29 @@ git.help:
 	@echo '        git.reviews          add revieweers to git config'
 	@echo ''
 
+## Show commands git
+.PHONY: git
 git:
 	@if [ -z "${command}" ]; then \
 		make git.help;\
 	fi
 
 
-# setup all actions git ignore.
+## Setup all actions git ignore.
 .PHONY: git.setup
 git.setup:
 	@echo "==> setup git..."
 	make git.ignore
 	make git.reviews
 
+## Generate git ignore of files.
 .PHONY: git.ignore
 git.ignore:
 	@echo "==> git ignore generated..."
 	@$(GI) ${GIT_IGNORES} > .gitignore
 	@echo ${MESSAGE_HAPPY}
 
+## Add reviewers to git config.
 .PHONY: git.reviews
 git.reviews:
 	@echo "==> add issues revievers..."
