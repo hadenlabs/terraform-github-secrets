@@ -19,11 +19,12 @@ This document gives an overview of variables used in the platform of the terrafo
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
 | secrets | secrets for repository | `map(any)` | n/a | yes |
-| visiblity | The visibility of the secrets. | `string` | n/a | yes |
+| visibility | The visibility of the secrets. | `string` | n/a | yes |
 
 ## Outputs
 
 | Name | Description |
 |------|-------------|
-| secrets | output instance github actions secrets organization |
+| secret | output instance github actions secrets organization |
+| secrets | List of secrets available. |
 
