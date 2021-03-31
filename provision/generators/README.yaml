@@ -22,7 +22,7 @@ github_repo: hadenlabs/terraform-github-secrets
 # Badges to display
 badges:
   - name: Lint
-    image: 'https://github.com/hadenlabs/terraform-github-secretsactions/workflows/lint.yml/badge.svg?branch=develop'
+    image: 'https://github.com/hadenlabs/terraform-github-secrets/actions/workflows/lint.yml/badge.svg?branch=develop'
     url: 'https://github.com/hadenlabs/terraform-github-secrets/actions'
   - name: 'Issues'
     image: 'https://img.shields.io/github/issues/hadenlabs/terraform-github-secrets.svg'
