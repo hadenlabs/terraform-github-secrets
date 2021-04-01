@@ -23,7 +23,7 @@ secrets terraform
 ```hcl
   module "main" {
     source = "hadenlabs/secrets/github"
-    version = "0.0.0
+    version = "0.1.0
 
     providers = {
       github = github
@@ -47,7 +47,7 @@ Full working examples can be found in [examples](./examples) folder.
 ```hcl
     module "main" {
       source = "hadenlabs/secrets/github"
-      version = "0.0.0
+      version = "0.1.0
 
       providers = {
         github = github
