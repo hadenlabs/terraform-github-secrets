@@ -4,9 +4,9 @@ git.help:
 	@echo '    git:'
 	@echo ''
 	@echo '        git                 show help'
-	@echo '        git.setup            install dependences to application'
-	@echo '        git.ignore           install dependences to application'
-	@echo '        git.reviews          add revieweers to git config'
+	@echo '        git.setup           install dependences to application'
+	@echo '        git.ignore          ignore dependences to application'
+	@echo '        git.reviews         add revieweers to git config'
 	@echo ''
 
 ## Show commands git
@@ -29,6 +29,9 @@ git.setup:
 git.ignore:
 	@echo "==> git ignore generated..."
 	@$(GI) ${GIT_IGNORES} > .gitignore
+	@for ignore in ${GIT_IGNORES_CUSTOM} ; do \
+		echo "$${ignore}" >> .gitignore ; \
+    done
 	@echo ${MESSAGE_HAPPY}
 
 ## Add reviewers to git config.
