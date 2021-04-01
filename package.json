@@ -1,6 +1,6 @@
 {
   "name": "terraform-github-secrets",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "secrets terraform",
   "repository": "ssh://git@github.com/hadenlabs/terraform-github-secrets.git",
   "author": "Luis Mayta <slovacus@gmail.com>",
