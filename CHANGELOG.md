@@ -2,6 +2,23 @@
 
 All notable changes to this project will be documented in this file. This file uses change log convention from [keep a CHANGELOG](http://keepachangelog.com/en/0.3.0/).
 
+<a name="0.1.1"></a>
+
+## [0.1.1](https://github.com/hadenlabs/terraform-github-secrets/compare/0.1.0...0.1.1)
+
+> 2021-05-01
+
+### Bug Fixes
+
+- convert vars to list ([#8](https://github.com/hadenlabs/terraform-github-secrets/issues/8))
+- files not exist (0.1.0)
+
+### Code Refactoring
+
+- template readme ([#8](https://github.com/hadenlabs/terraform-github-secrets/issues/8))
+- configuration actions make ([#8](https://github.com/hadenlabs/terraform-github-secrets/issues/8))
+- change lints validation code ([#8](https://github.com/hadenlabs/terraform-github-secrets/issues/8))
+
 <a name="0.1.0"></a>
 
 ## 0.1.0
