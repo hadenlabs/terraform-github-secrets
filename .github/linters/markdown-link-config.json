@@ -1,11 +1,11 @@
 {
-  "baseUrl": "https://github.com/hadenlabs/terraform-github-environment",
+  "baseUrl": "https://github.com/hadenlabs/terraform-github-secrets",
   "ignorePatterns": [
     {
       "pattern": "^https://hadenlabs.com"
     },
     {
-      "pattern": "^https://github.com/hadenlabs/terraform-github-environment/compare"
+      "pattern": "^https://github.com/hadenlabs/terraform-github-secrets/compare"
     }
   ],
   "replacementPatterns": [
