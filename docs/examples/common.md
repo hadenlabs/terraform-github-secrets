@@ -13,7 +13,6 @@
       secrets = {
         GH_TOKEN = "token"
       }
-
     }
 
 ```
