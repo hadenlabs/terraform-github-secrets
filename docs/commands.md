@@ -1,5 +1,5 @@
 <!-- Space: TerraformGithubSecrets -->
 <!-- Parent: Project -->
-<!-- Title: Support and Contact -->
+<!-- Title: Commands -->
 
-# Support & Contact
+## Commands
