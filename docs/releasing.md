@@ -1,6 +1,12 @@
 <!-- Space: TerraformGithubSecrets -->
 <!-- Parent: Project -->
-<!-- Title: Releasing -->
+<!-- Title: Project Releasing -->
+
+<!-- Label: TerraformGithubSecrets -->
+<!-- Label: Project -->
+<!-- Label: Releasing -->
+<!-- Include: docs/disclaimer.md -->
+<!-- Include: ac:toc -->
 
 # Releasing
 

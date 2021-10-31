@@ -1,3 +1,7 @@
+<!-- Space: TerraformGithubSecrets -->
+<!-- Parent: Project -->
+<!-- Title: Project Authors -->
+
 # Authors
 
 ## Leads

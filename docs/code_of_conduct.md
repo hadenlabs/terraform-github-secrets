@@ -1,6 +1,6 @@
 <!-- Space: TerraformGithubSecrets -->
 <!-- Parent: Project -->
-<!-- Title: Code of Conduct -->
+<!-- Title: Project Code of Conduct -->
 
 # Contributor Covenant Code of Conduct
 
