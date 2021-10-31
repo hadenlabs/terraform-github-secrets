@@ -26,7 +26,7 @@ Terraform module to provision an github secrets.
 This is a list of plugins that need to be installed previously to enjoy all the goodies of this configuration:
 
 - [Pyenv](https://github.com/pyenv/pyenv)
-- [Docker](https://www.docker.com/)
+- [Docker](https://www.docker.com)
 - [python](https://www.python.org)
 - [taskfile](https://github.com/go-task/task)
 
@@ -78,7 +78,7 @@ Full working examples can be found in [examples](./examples) folder.
 
 | Name                                                                     | Version |
 | ------------------------------------------------------------------------ | ------- |
-| <a name="requirement_terraform"></a> [terraform](#requirement_terraform) | >= 0.14 |
+| <a name="requirement_terraform"></a> [terraform](#requirement_terraform) | >= 0.13 |
 | <a name="requirement_github"></a> [github](#requirement_github)          | >=4.5.0 |
 
 ## Providers
