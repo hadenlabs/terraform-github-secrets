@@ -1,9 +1,8 @@
-<!-- Space: TerraformGithubSecrets -->
-<!-- Parent: Project -->
-<!-- Title: Project Roadmap -->
-
+<!-- Space: Projects -->
+<!-- Parent: TerraformGithubSecrets -->
+<!-- Title: Roadmap TerraformGithubSecrets -->
 <!-- Label: Roadmap -->
-<!-- Include: docs/disclaimer.md -->
+<!-- Include: disclaimer.md -->
 <!-- Include: ac:toc -->
 
 <!-- Macro: :todo:
@@ -41,4 +40,18 @@ You can see the corresponding projects on [terraform-github-secrets](https://git
 
 ## Epics
 
+### Agosto 2021
+
+### September 2021
+
+### October 2021
+
+### November 2021
+
+### December 2021
+
 ## Long Lived Initiatives
+
+These projects don't have an end date. They are something we'll continuously work towards.
+
+- [Better Docs](https://hadenlabs.atlassian.net/wiki)

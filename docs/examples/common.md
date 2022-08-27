@@ -1,3 +1,10 @@
+<!-- Space: Projects -->
+<!-- Parent: TerraformGithubSecrets -->
+<!-- Title: Examples TerraformGithubSecrets -->
+<!-- Label: Examples -->
+<!-- Include: ./../disclaimer.md -->
+<!-- Include: ac:toc -->
+
 ### common
 
 ```hcl

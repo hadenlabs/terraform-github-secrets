@@ -9,7 +9,8 @@ name: terraform-github-secrets
 
 # Tags of this project
 tags:
-  - template
+  - github
+  - terraform
 
 # Categories of this project
 categories:
@@ -19,10 +20,6 @@ categories:
 
 email:
   support: support@hadenlabs.com
-
-confluence:
-  space: TerraformGithubSecrets
-  title: Project
 
 # Logo for this project
 #logo: docs/logo.png
@@ -54,14 +51,20 @@ badges:
     image: https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow
     url: https://conventionalcommits.org
   - name: KeepAChangelog
-    image: https://img.shields.io/badge/Keep%20A%20Changelog-1.0.0-%23E05735
+    image: https://img.shields.io/badge/changelog-Keep%20a%20Changelog%20v1.0.0-orange
     url: https://keepachangelog.com
+  - name: Terraform Version
+    image: https://img.shields.io/badge/terraform-1.x%20|%200.15%20|%200.14%20|%200.13%20|%200.12.20+-623CE4.svg?logo=terraform
+    url: https://github.com/hashicorp/terraform/releases
+  - name: AWS Provider Version
+    image: https://img.shields.io/badge/AWS-3%20and%202.0+-F8991D.svg?logo=terraform
+    url: https://github.com/terraform-providers/terraform-provider-aws/releases
 
 requirements: |-
 
   This is a list of plugins that need to be installed previously to enjoy all the goodies of this configuration:
 
-  - [Pyenv](https://github.com/pyenv/pyenv)
+  - [gomplate](https://github.com/hairyhenderson/gomplate)
   - [Docker](https://www.docker.com)
   - [python](https://www.python.org)
   - [taskfile](https://github.com/go-task/task)
@@ -71,26 +74,8 @@ description: |-
 
   Terraform module to provision an github secrets.
 
-# How to use this project
-usage: |-
-  ```hcl
-    module "main" {
-      source = "hadenlabs/secrets/github"
-      version = "0.1.1
-
-      providers = {
-        github = github
-      }
-
-      visibility        = "all"
-      secrets = {
-        GH_TOKEN = "token"
-      }
-
-    }
-  ```
-
-  Full working examples can be found in [examples](./examples) folder.
+usages:
+  - docs/usage.md
 
 examples:
   - 'docs/examples/common.md'

@@ -1,13 +1,3 @@
-<!-- Space: TerraformGithubSecrets -->
-<!-- Parent: Project -->
-<!-- Title: Project Troubleshooting -->
-
-<!-- Label: TerraformGithubSecrets -->
-<!-- Label: Project -->
-<!-- Label: Troubleshooting -->
-<!-- Include: docs/disclaimer.md -->
-<!-- Include: ac:toc -->
-
 # Troubleshooting
 
 ## Environment

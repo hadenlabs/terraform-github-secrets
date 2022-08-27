@@ -2,16 +2,13 @@
 
 version: '3'
 
-vars:
-  FILES_PLANTUML:
-    sh: find ./ -type f -name '*.plantuml' | sort -u | xargs
-
 tasks:
   build:
     desc: Build Diagrams Plantuml.
     run: once
     silent: true
     cmds:
+      - cmd: mkdir -p decks/images/diagrams
       - cmd: mkdir -p static/images/diagrams
       - cmd: mkdir -p docs/images/diagrams
       - task: make
@@ -33,10 +30,17 @@ tasks:
     desc: generate files plantuml.
     cmds:
       - cmd: echo {{.FILES_PLANTUML}}
-      - >-
-        docker run
-        --platform linux/amd64
-        --rm
-        --workdir /data
-        -v {{.PWD}}:/data
-        hadenlabs/plantuml {{.FILES_PLANTUML}}
+      - cmd: |-
+          docker run
+          --platform linux/amd64
+          --rm
+          --workdir /data
+          -v {{.PWD}}:/data
+          infosisarg/plantuml {{.FILES_PLANTUML}}
+        vars:
+          FILES_PLANTUML:
+            sh: >-
+              find ./ -type f -name '*.plantuml'
+              | grep -v '.terraform'
+              | sort -u
+              | xargs
