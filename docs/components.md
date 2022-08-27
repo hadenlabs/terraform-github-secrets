@@ -1,12 +1,10 @@
 <!-- Space: Projects -->
 <!-- Parent: TerraformGithubSecrets -->
-<!-- Title: EnvVars TerraformGithubSecrets -->
+<!-- Title: Components TerraformGithubSecrets -->
 <!-- Label: TerraformGithubSecrets -->
 <!-- Label: Project -->
-<!-- Label: Env Vars -->
+<!-- Label: Components -->
 <!-- Include: disclaimer.md -->
 <!-- Include: ac:toc -->
 
----
-
-## Env Vars
+# components
