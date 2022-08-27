@@ -1,6 +1,9 @@
 package config
 
 import (
+	"path/filepath"
+	"runtime"
+
 	"github.com/hadenlabs/terraform-github-secrets/internal/errors"
 	"github.com/hadenlabs/terraform-github-secrets/internal/version"
 )
@@ -10,13 +13,11 @@ type Config struct {
 	App App
 }
 
-// Configurer methods for config.
-type Configurer interface {
-	ReadConfig() (*Config, error)
-}
-
 // ReadConfig read values and files for config.
 func (c *Config) ReadConfig() (*Config, error) {
+	_, filePath, _, _ := runtime.Caller(0)
+	rootDir := filepath.Dir(filePath)
+	c.App.RootPath = filepath.Join(rootDir, "..")
 	tag := version.Short()
 	c.App.Version = tag
 	return c, nil
