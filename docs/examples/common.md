@@ -5,7 +5,7 @@
 <!-- Include: ./../disclaimer.md -->
 <!-- Include: ac:toc -->
 
-### common
+### Common
 
 ```hcl
     module "main" {
