@@ -34,7 +34,7 @@ This is a list of plugins that need to be installed previously to enjoy all the 
 ```hcl
   module "main" {
     source = "hadenlabs/secrets/github"
-    version = "0.1.1
+    version = "0.1.1"
 
     providers = {
       github = github
@@ -64,7 +64,7 @@ Full working examples can be found in [examples](./examples) folder.
 ```hcl
     module "main" {
       source = "hadenlabs/secrets/github"
-      version = "0.1.1
+      version = "0.1.1"
 
       providers = {
         github = github
