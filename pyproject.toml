@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "terraform-github-secrets"
-version = "0.1.1"
+version = "0.1.2"
 description = "terraform github secrets"
 authors = ["Luis Mayta <luis@hadenlabs.com>"]
 license = "LGPL-3.0"
