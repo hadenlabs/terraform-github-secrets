@@ -130,17 +130,13 @@ omit = ["tests/*"]
 search = '{current_version}'
 replace = '{new_version}'
 
-[tool.poetry_bumpversion.file."provision/generators/README.yaml"]
-search = '{current_version}'
-replace = '{new_version}'
-
 [tool.poetry_bumpversion.file."docs/examples/common.md"]
-search = '{current_version}'
-replace = '{new_version}'
+search = 'version = "{current_version}"'
+replace = 'version = "{new_version}"'
 
 [tool.poetry_bumpversion.file."docs/usage.md"]
-search = '{current_version}'
-replace = '{new_version}'
+search = 'version = "{current_version}"'
+replace = 'version = "{new_version}"'
 
 [tool.poetry_bumpversion.file."sonar-project.properties"]
 search = 'sonar.projectVersion={current_version}'
