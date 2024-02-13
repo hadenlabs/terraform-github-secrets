@@ -1,7 +1,6 @@
 <!-- Space: Projects -->
 <!-- Parent: TerraformGithubSecrets -->
 <!-- Title: Security TerraformGithubSecrets -->
-
 <!-- Label: TerraformGithubSecrets -->
 <!-- Label: Security -->
 <!-- Include: docs/disclaimer.md -->

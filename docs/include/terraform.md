@@ -1,16 +1,17 @@
+<!-- markdown-link-check-disable -->
 <!-- BEGIN_TF_DOCS -->
 ## Requirements
 
 | Name | Version |
 |------|---------|
-| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 0.13 |
-| <a name="requirement_github"></a> [github](#requirement\_github) | >=4.5.0 |
+| terraform | >= 0.13 |
+| github | >=4.5.0 |
 
 ## Providers
 
 | Name | Version |
 |------|---------|
-| <a name="provider_github"></a> [github](#provider\_github) | >=4.5.0 |
+| github | >=4.5.0 |
 
 ## Modules
 
@@ -26,13 +27,14 @@ No modules.
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| <a name="input_secrets"></a> [secrets](#input\_secrets) | secrets for repository | `map(any)` | n/a | yes |
-| <a name="input_visibility"></a> [visibility](#input\_visibility) | The visibility of the secrets. | `string` | n/a | yes |
+| secrets | secrets for repository | `map(any)` | n/a | yes |
+| visibility | The visibility of the secrets. | `string` | n/a | yes |
 
 ## Outputs
 
 | Name | Description |
 |------|-------------|
-| <a name="output_secret"></a> [secret](#output\_secret) | output instance github actions secrets organization |
-| <a name="output_secrets"></a> [secrets](#output\_secrets) | List of secrets available. |
+| secret | output instance github actions secrets organization |
+| secrets | List of secrets available. |
 <!-- END_TF_DOCS -->
+<!-- markdown-link-check-enable -->
