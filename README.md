@@ -23,7 +23,7 @@ Terraform module to provision an github secrets.
 This is a list of plugins that need to be installed previously to enjoy all the goodies of this configuration:
 
 - [gomplate](https://github.com/hairyhenderson/gomplate)
-- [Docker](https://www.docker.com)
+- [terraform](https://github.com/hashicorp/terraform)
 - [python](https://www.python.org)
 - [taskfile](https://github.com/go-task/task)
 
@@ -59,7 +59,7 @@ Full working examples can be found in [examples](./examples) folder.
 <!-- Include: ./../disclaimer.md -->
 <!-- Include: ac:toc -->
 
-### common
+### Common
 
 ```hcl
     module "main" {
@@ -78,20 +78,21 @@ Full working examples can be found in [examples](./examples) folder.
 
 ```
 
- <!-- BEGIN_TF_DOCS -->
+ <!-- markdown-link-check-disable -->
+<!-- BEGIN_TF_DOCS -->
 
 ## Requirements
 
-| Name                                                                     | Version |
-| ------------------------------------------------------------------------ | ------- |
-| <a name="requirement_terraform"></a> [terraform](#requirement_terraform) | >= 0.13 |
-| <a name="requirement_github"></a> [github](#requirement_github)          | >=4.5.0 |
+| Name      | Version |
+| --------- | ------- |
+| terraform | >= 0.13 |
+| github    | >=4.5.0 |
 
 ## Providers
 
-| Name                                                      | Version |
-| --------------------------------------------------------- | ------- |
-| <a name="provider_github"></a> [github](#provider_github) | >=4.5.0 |
+| Name   | Version |
+| ------ | ------- |
+| github | >=4.5.0 |
 
 ## Modules
 
@@ -105,19 +106,20 @@ No modules.
 
 ## Inputs
 
-| Name | Description | Type | Default | Required |
-| --- | --- | --- | --- | :-: |
-| <a name="input_secrets"></a> [secrets](#input_secrets) | secrets for repository | `map(any)` | n/a | yes |
-| <a name="input_visibility"></a> [visibility](#input_visibility) | The visibility of the secrets. | `string` | n/a | yes |
+| Name       | Description                    | Type       | Default | Required |
+| ---------- | ------------------------------ | ---------- | ------- | :------: |
+| secrets    | secrets for repository         | `map(any)` | n/a     |   yes    |
+| visibility | The visibility of the secrets. | `string`   | n/a     |   yes    |
 
 ## Outputs
 
-| Name                                                     | Description                                         |
-| -------------------------------------------------------- | --------------------------------------------------- |
-| <a name="output_secret"></a> [secret](#output_secret)    | output instance github actions secrets organization |
-| <a name="output_secrets"></a> [secrets](#output_secrets) | List of secrets available.                          |
+| Name    | Description                                         |
+| ------- | --------------------------------------------------- |
+| secret  | output instance github actions secrets organization |
+| secrets | List of secrets available.                          |
 
 <!-- END_TF_DOCS -->
+<!-- markdown-link-check-enable -->
 
 ## Help
 
@@ -146,7 +148,7 @@ Using the given version number of `MAJOR.MINOR.PATCH`, we apply the following co
 
 ## Copyright
 
-Copyright © 2018-2022 [Hadenlabs](https://hadenlabs.com)
+Copyright © 2018-2024 [Hadenlabs](https://hadenlabs.com)
 
 ## Trademarks
 
